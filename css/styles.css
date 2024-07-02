@@ -1,0 +1,58 @@
+@import url(normalize.css);
+
+:root {
+  --color-primary: red;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
