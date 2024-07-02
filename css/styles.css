@@ -4,12 +4,18 @@
   --color-primary: #000;
   --color-secondary: #fff;
   --color-body: #4a4949;
+  --color-blueish: #1e61d9;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-body);
+  color: var(--color-secondary);
 }
 
 /* Typography */
@@ -22,6 +28,8 @@ body {
   font-size: 2.4rem;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  /* MESSAGE: Just for testinng components */
+  margin: 2rem;
 }
 
 h1,
@@ -84,4 +92,16 @@ a {
 
 .links-arrow:hover::after {
   margin-left: 1rem;
+}
+
+/* Badges */
+
+.badge {
+  color: var(--color-secondary);
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+}
+
+.badge--blueish {
+  background: var(--color-blueish);
 }
