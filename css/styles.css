@@ -1,7 +1,9 @@
-@import url(normalize.css);
+@import "./normalize.css";
 
 :root {
-  --color-primary: red;
+  --color-primary: #000;
+  --color-secondary: #fff;
+  --color-body: #4a4949;
 }
 
 *,
@@ -19,24 +21,28 @@ html {
 body {
   font-size: 2.4rem;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: var(--color-body);
 }
 
 h1,
 h2,
 h3 {
-  color: #000;
+  color: var(--color-primary);
 }
 
 h1 {
   font-size: 6rem;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 4rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 2.5rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,4 +61,27 @@ h3 {
   h3 {
     font-size: 2rem;
   }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.links-arrow::after {
+  content: "\25B6";
+  font-size: 1.5rem;
+  margin-left: 3px;
+  transition: margin 0.3s;
+}
+
+.links-arrow {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.links-arrow:hover::after {
+  margin-left: 1rem;
 }
