@@ -113,4 +113,23 @@ a {
   list-style: none;
 }
 
-/* Button */
+/* Icon */
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-container {
+  padding: 1.5rem;
+  border-radius: 3rem;
+  display: inline-flex;
+}
+
+.icon-container--primary {
+  background: var(--color-primary);
+}
+
+.icon--secondary {
+  fill: var(--color-secondary);
+}
