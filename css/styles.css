@@ -133,3 +133,19 @@ a {
 .icon--secondary {
   fill: var(--color-secondary);
 }
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
