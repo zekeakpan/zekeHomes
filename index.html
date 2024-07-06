@@ -14,60 +14,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <a href="#" class="card__anker">
-      <div class="card card--image">
-        <div class="card__image-container">
-          <h3 class="card__image-heading">New Listings</h3>
-          <span class="badge badge--small badge--secondary card__image-badge"
-            >251</span
-          >
-          <div class="image-slider">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  images/home-frontview@2x.webp 1x,
-                  images/home-frontview@3x.webp 2x
-                "
-              />
-              <source
-                type="image/jpg"
-                srcset="
-                  images/home-frontview@2x.jpg 1x,
-                  images/home-frontview@3x.jpg 2x
-                "
-              />
-              <img
-                class="card__image active"
-                src="images/home-frontview@3x.jpg"
-                alt=""
-              />
-            </picture>
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  images/home-interior@2x.webp 1x,
-                  images/home-interior@3x.webp 2x
-                "
-              />
-              <source
-                type="image/jpg"
-                srcset="
-                  images/home-interior@2x.jpg 1x,
-                  images/home-interior@3x.jpg 2x
-                "
-              />
-              <img
-                class="card__image"
-                src="images/home-interior@3x.jpg"
-                alt=""
-              />
-            </picture>
+    <div class="card discover">
+      <div class="discover__card">
+        <a href="#" class="discover__media">
+          <div class="discover__container">
+            <svg class="media__icon">
+              <use href="images/sprite.svg#spot-badge-cash-reward"></use>
+            </svg>
+            <div class="media__content-container">
+              <h4 class="media__heading">Find out how much you can afford</h4>
+              <p class="media__content">
+                We'll help you estimate your budget range
+              </p>
+              <p class="media__call">Try our affordability calculator</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </a>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

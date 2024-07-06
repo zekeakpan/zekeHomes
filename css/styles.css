@@ -3,7 +3,6 @@
 :root {
   --color-primary: #000;
   --color-secondary: #fff;
-  --color-body: #4a4949;
   --color-blueish: #1e61d9;
 }
 
@@ -25,9 +24,10 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  color: var(--color-body);
+  color: var(--color-primary);
   line-height: 1.5;
   /* MESSAGE: Just for testinng components */
   margin: 2rem;
@@ -43,14 +43,23 @@ h1 {
   font-weight: 800;
 }
 
-h2 {
+h2,
+h4 {
   color: var(--color-primary);
+}
+
+h2 {
   font-size: 4rem;
   font-weight: 600;
 }
 
 h3 {
   font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -163,6 +172,11 @@ a {
   color: var(--color-secondary);
 }
 
+.btn--outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
 /* Inputs */
 
 .input {
@@ -196,6 +210,8 @@ input:focus {
   border-radius: 1rem;
   overflow: hidden;
 }
+
+/* Listing Cards */
 
 .card--image {
   max-width: 30rem;
@@ -266,4 +282,53 @@ input:focus {
 .card__image-container:hover .card__image-heading,
 .card__image-container:hover .card__image-badge {
   opacity: 0;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Discover Cards */
+
+.discover {
+  border: 1px solid #c6c6c6;
+  padding: 2rem;
+}
+
+.discover__media {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  max-width: 50rem;
+}
+
+.discover__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.media__icon {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 5rem;
+}
+
+.media__heading {
+  margin: 0 0 1rem 0;
+}
+
+.discover__media p {
+  font-size: 1.6rem;
+}
+
+.media__content {
+  margin-bottom: 3rem;
+}
+
+.media__call {
+  font-weight: 600;
+  text-decoration: underline;
 }
