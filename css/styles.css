@@ -34,9 +34,8 @@ body {
 }
 
 h1,
-h2,
 h3 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 h1 {
@@ -45,6 +44,7 @@ h1 {
 }
 
 h2 {
+  color: var(--color-primary);
   font-size: 4rem;
   font-weight: 600;
 }
@@ -107,6 +107,18 @@ a {
   background: var(--color-blueish);
 }
 
+.badge--secondary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.badge--small {
+  padding: 0.4rem 0.9rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 /* List */
 
 .list {
@@ -148,6 +160,7 @@ a {
 
 .btn--primary {
   background: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 /* Inputs */
@@ -157,6 +170,7 @@ a {
   padding: 1rem 2rem;
   border-radius: 3rem;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 
 input:focus {
@@ -174,4 +188,82 @@ input:focus {
 .address-bar .input {
   width: 0;
   flex-grow: 1;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card--image {
+  max-width: 30rem;
+}
+
+.card__image-container {
+  position: relative;
+  height: 21rem;
+  overflow: hidden;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 1.8s ease-in-out, filter 3s ease-out;
+}
+
+.card__image.active {
+  left: 0;
+}
+
+.card__image.previous {
+  left: -100%;
+}
+
+.card__image.diminish {
+  filter: brightness(0);
+}
+
+.card__image-badge,
+.card__image-heading {
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.4s ease-out;
+}
+
+.card__image-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  top: 1.5rem;
+  left: 1.5rem;
+  margin: 0;
+}
+
+.card__image-badge {
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.card__image-container:hover .card__image-heading {
+  text-decoration: underline;
+}
+
+.card__image-container:hover .card__image {
+  filter: brightness(0.9);
+}
+
+.card__image-container:hover .card__image-heading,
+.card__image-container:hover .card__image-badge {
+  opacity: 0;
 }

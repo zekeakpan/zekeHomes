@@ -14,21 +14,60 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="address-bar">
-      <!-- <label for="address">Hey input your dream location</label> -->
-      <input
-        class="input"
-        type="text"
-        id="address"
-        name="address"
-        placeholder="Home Address, City"
-      />
-      <button class="btn btn--primary">
-        <svg class="icon icon--secondary">
-          <use href="images/sprite.svg#search"></use>
-        </svg>
-      </button>
-    </div>
+    <a href="#" class="card__anker">
+      <div class="card card--image">
+        <div class="card__image-container">
+          <h3 class="card__image-heading">New Listings</h3>
+          <span class="badge badge--small badge--secondary card__image-badge"
+            >251</span
+          >
+          <div class="image-slider">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/home-frontview@2x.webp 1x,
+                  images/home-frontview@3x.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/home-frontview@2x.jpg 1x,
+                  images/home-frontview@3x.jpg 2x
+                "
+              />
+              <img
+                class="card__image active"
+                src="images/home-frontview@3x.jpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/home-interior@2x.webp 1x,
+                  images/home-interior@3x.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/home-interior@2x.jpg 1x,
+                  images/home-interior@3x.jpg 2x
+                "
+              />
+              <img
+                class="card__image"
+                src="images/home-interior@3x.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </a>
     <script src="js/main.js"></script>
   </body>
 </html>
