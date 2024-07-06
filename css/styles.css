@@ -3,6 +3,7 @@
 :root {
   --color-primary: #000;
   --color-secondary: #fff;
+  --color-body: #3d3d3d;
   --color-blueish: #1e61d9;
 }
 
@@ -85,6 +86,11 @@ h4 {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #6d6c6c;
 }
 
 .links-arrow::after {
@@ -107,12 +113,12 @@ a {
 /* Badges */
 
 .badge {
-  color: var(--color-secondary);
-  padding: 1rem 3rem;
   border-radius: 3rem;
+  padding: 1rem 3rem;
 }
 
 .badge--blueish {
+  color: var(--color-secondary);
   background: var(--color-blueish);
 }
 
@@ -122,7 +128,7 @@ a {
 }
 
 .badge--small {
-  padding: 0.4rem 0.9rem;
+  padding: 0.3rem 0.9rem;
   border-radius: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
@@ -284,13 +290,6 @@ input:focus {
   opacity: 0;
 }
 
-/* Grid */
-
-.grid {
-  display: grid;
-  gap: 2rem;
-}
-
 /* Discover Cards */
 
 .discover {
@@ -331,4 +330,58 @@ input:focus {
 .media__call {
   font-weight: 600;
   text-decoration: underline;
+}
+
+/* Cards Trends */
+
+.trend {
+  max-width: 30rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1rem #a7a7a7;
+}
+
+.trend__header {
+  position: relative;
+  height: 20rem;
+}
+
+.trend__badge {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.trend__image {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.5s ease-out;
+}
+
+.trend__image:hover {
+  filter: brightness(0.9);
+}
+
+.trend__footer {
+  max-height: 15rem;
+  padding: 1.2rem 1.8rem;
+}
+
+.trend__footer p {
+  margin: 0;
+}
+
+.trend__footer p::after {
+  content: "...";
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
 }

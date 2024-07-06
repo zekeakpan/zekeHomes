@@ -14,24 +14,37 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="card discover">
-      <div class="discover__card">
-        <a href="#" class="discover__media">
-          <div class="discover__container">
-            <svg class="media__icon">
-              <use href="images/sprite.svg#spot-badge-cash-reward"></use>
-            </svg>
-            <div class="media__content-container">
-              <h4 class="media__heading">Find out how much you can afford</h4>
-              <p class="media__content">
-                We'll help you estimate your budget range
-              </p>
-              <p class="media__call">Try our affordability calculator</p>
-            </div>
-          </div>
-        </a>
+    <a class="card__anker" href="#">
+      <div class="card trend">
+        <div class="trend__header">
+          <span class="badge--small badge--blueish trend__badge">Buy</span>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/trend-home-frontview.webp    1x,
+                images/trend-home-frontview@2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                images/trend-home-frontview.jpg    1x,
+                images/trend-home-frontview@2x.jpg 2x
+              "
+            />
+            <img
+              class="trend__image"
+              src="Images/trend-home-frontview@2x.jpg"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="trend__footer">
+          <p>Buying in 'Billionaires Isle' Nantucket Is Now a Bargain:</p>
+        </div>
       </div>
-    </div>
+    </a>
     <script src="js/main.js"></script>
   </body>
 </html>
