@@ -30,8 +30,6 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: var(--color-primary);
   line-height: 1.5;
-  /* MESSAGE: Just for testinng components */
-  margin: 2rem;
 }
 
 h1,
@@ -66,7 +64,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   h1 {
@@ -151,6 +149,10 @@ a:hover {
   padding: 1.5rem;
   border-radius: 3rem;
   display: inline-flex;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
 }
 
 .icon-container--primary {
@@ -584,3 +586,69 @@ article {
 }
 
 /* Nav Bar */
+
+.menu {
+  height: 1vh;
+  width: 25rem;
+  max-width: 50vw;
+}
+
+.menu.toggle {
+  visibility: hidden;
+}
+
+.logo-container {
+  border-bottom: 1px solid #a7a7a7;
+  padding: 0.7rem 0 0.4rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.list__items {
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.menu__list a {
+  border-bottom: 1px solid #a7a7a7;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 1rem 2rem;
+}
+
+.menu__promotion p {
+  padding: 2rem 0 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.menu__promotion {
+  position: relative;
+}
+
+.menu__promotion img:first-of-type {
+  position: absolute;
+  transform: scale(0.9);
+  left: 1.2rem;
+}
+
+.close {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-top: 1rem;
+}
+
+.close-icon:hover,
+.chevron:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1080px) {
+}
