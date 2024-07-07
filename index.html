@@ -14,74 +14,53 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="article">
-      <div class="article__header">
-        <p>Unique Homes</p>
-        <h2 class="article__heading">
-          Once Upon an Abode: 5 Magical Storybook Cottages Priced Below $500k
-        </h2>
-        <button class="btn btn--outline-dark">Read Article</button>
-      </div>
-      <div class="grid grid--1x3 article__image-container">
-        <div class="article__side-image article__side-image--left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="
-                images/article-home-leftside.webp    1x,
-                images/article-home-leftside@2x.webp 2x
-              "
-            />
-            <source
-              type="image/jpg"
-              srcset="
-                images/article-home-leftside.jpg    1x,
-                images/article-home-leftside@2x.jpg 2x
-              "
-            />
-            <img src="images/article-home-leftside@2x.jpg" alt="" />
-          </picture>
-        </div>
-        <div class="article__image">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="
-                images/article-home-central.webp    1x,
-                images/article-home-central@2x.webp 2x
-              "
-            />
-            <source
-              type="image/jpg"
-              srcset="
-                images/article-home-central.jpg    1x,
-                images/article-home-central@2x.jpg 2x
-              "
-            />
-            <img src="images/article-home-central@2x.jpg" alt="" />
-          </picture>
-        </div>
-        <div class="article__side-image article__side-image--right">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="
-                images/article-home-right-side.webp    1x,
-                images/article-home-right-side@2x.webp 2x
-              "
-            />
-            <source
-              type="image/jpg"
-              srcset="
-                images/article-home-right-side.jpg    1x,
-                images/article-home-right-side@2x.jpg 2x
-              "
-            />
-            <img src="images/article-home-right-side@2x.jpg" alt="" />
-          </picture>
+    <section class="features-block">
+      <div class="features__container grid grid--1x2">
+        <picture class="features__image">
+          <source type="image/webp" srcset="images/need-a-home.webp" />
+          <source type="image/jpg" srcset="images/need-a-home.jpg" />
+          <img src="Images/need-a-home.jpg" alt="" />
+        </picture>
+        <div class="features__content">
+          <h2 class="content__heading">Need a home loan? Get preapproved</h2>
+          <p>
+            Find a lender who can offer competitive mortgage rates and help you
+            with pre-approval.
+          </p>
+          <a class="btn btn--primary btn--features"> Get pre-approved now </a>
+          <a class="features__link" href="#">Advertising disclosure</a>
         </div>
       </div>
-    </div>
+      <div class="features__container grid grid--1x2">
+        <picture class="features__image">
+          <source type="image/webp" srcset="images/get-local-info.webp" />
+          <source type="image/jpg" srcset="images/get-local-info.jpg" />
+          <img src="Images/get-local-info.jpg" alt="" />
+        </picture>
+        <div class="features__content">
+          <h2 class="content__heading">Get Local Info</h2>
+          <p>
+            Does it have pet-friendly rentals? How are the schools? Get
+            important local information on the area you're most interested in.
+          </p>
+          <div class="address-bar">
+            <!-- <label for="address">Hey input your dream location</label> -->
+            <input
+              class="input"
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Home Address, City"
+            />
+            <button class="btn btn--primary">
+              <svg class="icon icon--secondary">
+                <use href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
