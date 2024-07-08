@@ -1,3 +1,29 @@
+const menu = document.querySelector('.menu__side');
+const closeButton = document.querySelector('.close__btn');
+const menuButton = document.querySelector('.menu__btn');
+const showOverlay = document.querySelector('.show-overlay');
+const dimOverlay = document.querySelector('.dim-overlay');
+
+menuButton.addEventListener('click', () => {
+    menu.classList.remove('menu__close');
+    menu.classList.add('menu__open');
+    dimOverlay.classList.add('show-overlay');
+});
+
+function closeMenu (event) {
+        menu.classList.remove('menu__open');
+        menu.classList.add('menu__close');
+
+        setTimeout(() => {
+            dimOverlay.classList.remove('show-overlay');
+        }, 300);
+}
+
+closeButton.addEventListener('click', closeMenu);
+dimOverlay.addEventListener('click', closeMenu);
+
+
+
 function initAutocomplete () {
     let input = document.getElementById('address');
     let autocomplete = new google.maps.places.Autocomplete(input);
@@ -47,4 +73,3 @@ imageContainer.addEventListener('mouseout', () => {
     image[0].classList.add('active');
 
 });
-
