@@ -14,79 +14,59 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="dim-overlay"></div>
-    <nav class="nav">
-      <button class="btn btn--icon menu__btn">
-        <svg class="menu__icon">
-          <use href="images/sprite.svg#menu"></use>
-        </svg>
-      </button>
-      <div class="nav__logo">
-        <img src="Images/Logo.svg" alt="" /><span>&reg;</span>
-      </div>
-      <button href="" class="btn btn--icon user__btn">
-        <svg class="icon--primary user">
-          <use
-            href="images/sprite.svg#2232321_follow_person_profile_icon"
-          ></use>
-        </svg>
-      </button>
-      <div class="menu menu__side menu__close">
-        <div class="logo-container">
-          <img src="Images/Logo.svg" alt="" />
-          <button class="btn btn--icon close__btn">
-            <img
-              class="icon close"
-              src="images/4115230_cancel_close_delete_icon.svg"
-              alt=""
-            />
-          </button>
-        </div>
-        <ul class="menu__list">
-          <a href="#">
+    <section class="hero">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x"
+        />
+        <source
+          type="image/jpg"
+          srcset="images/hero-image@1x.jpg 1x, images/hero-image@2x.jpg 2x"
+        />
+        <img class="hero__bg" src="images/hero-image@2x.jpg" alt="" />
+      </picture>
+      <div class="hero__contents">
+        <h1>The #1 site real estate professionals trust</h1>
+        <ul class="hero__list">
+          <a href="">
             <li class="list__items">Buy</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
           </a>
-          <a href="#">
-            <li class="list__items">Sell</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
-          </a>
-          <a href="#">
+          <a href="">
             <li class="list__items">Rent</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
           </a>
-          <a href="#">
-            <li class="list__items">Mortgage</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
+          <a href="">
+            <li class="list__items">Sell</li>
           </a>
-          <a href="#">
-            <li class="list__items">Find Realtors&reg;</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
+          <a href="">
+            <li class="list__items">Pre-approval</li>
           </a>
-          <a href="#">
-            <li class="list__items">My Home</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
+          <a href="">
+            <li class="list__items">Agents</li>
           </a>
-          <a href="#">
-            <li class="list__items">News & Insights</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
+          <a href="">
+            <li class="list__items">Just sold</li>
           </a>
-          <a href="#">
-            <li class="list__items">Advertise</li>
-            <img class="chevron" src="images/chevron.svg" alt="" />
+          <a href="">
+            <li class="list__items">Home value</li>
           </a>
         </ul>
-        <div class="menu__promotion">
-          <p>Find Homes on the go!</p>
-          <img src="Images/picto-android-app-download-badge.svg" alt="" />
-          <img src="images/picto-app-promotion-bg.svg" alt="" />
+        <div class="address-bar">
+          <input
+            class="input"
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address, School, City, Zip"
+          />
+          <button class="btn btn--primary">
+            <svg class="icon icon--secondary">
+              <use href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="register">
-        <a href="#" class="log-in">Log In</a>
-        <button class="btn btn--primary sign-up">Sign Up</button>
-      </div>
-    </nav>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

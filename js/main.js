@@ -1,3 +1,22 @@
+
+function initAutocomplete () {
+    let input = document.getElementById('address');
+    let autocomplete = new google.maps.places.Autocomplete(input);
+
+    autocomplete.addListener ('place_changed', function () {
+        let place = autocomplete.getPlace();
+        if (!place.geometry){
+            window.alert(`There are no details for: '${place.name}'`);
+            return;
+        }
+
+    });
+}
+
+
+google.maps.event.addDomListener(window, 'load', initAutocomplete);
+
+
 const menu = document.querySelector('.menu__side');
 const closeButton = document.querySelector('.close__btn');
 const menuButton = document.querySelector('.menu__btn');
@@ -23,23 +42,6 @@ closeButton.addEventListener('click', closeMenu);
 dimOverlay.addEventListener('click', closeMenu);
 
 
-
-function initAutocomplete () {
-    let input = document.getElementById('address');
-    let autocomplete = new google.maps.places.Autocomplete(input);
-
-    autocomplete.addListener ('place_changed', function () {
-        let place = autocomplete.getPlace();
-        if (!place.geometry){
-            window.alert(`There are no details for: '${place.name}'`);
-            return;
-        }
-
-    });
-}
-
-
-google.maps.event.addDomListener(window, 'load', initAutocomplete);
 
 document.addEventListener ('DOMContentLoaded', (event) => {
     const collapsibles = document.getElementById('collapsible-container');

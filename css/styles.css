@@ -38,8 +38,9 @@ h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 800;
+  max-width: 40rem;
 }
 
 h2,
@@ -85,10 +86,6 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:hover {
-  opacity: 0.5;
 }
 
 .links-arrow::after {
@@ -227,10 +224,11 @@ input:focus {
 
 .address-bar {
   display: flex;
-  border: 1px solid var(--color-primary);
   background: var(--color-secondary);
-  padding: 0.2rem 0.3rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 3rem;
+  width: 100%;
+  max-width: 58rem;
 }
 
 .address-bar .input {
@@ -650,7 +648,7 @@ nav button:hover {
   margin: 0;
 }
 
-.list__items,
+.menu__list .list__items,
 .log-in {
   font-size: 1.3rem;
   font-weight: 500;
@@ -769,6 +767,7 @@ nav button:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: ;
   }
 
   .register {
@@ -804,5 +803,81 @@ nav button:hover {
 
   .nav a:hover {
     opacity: 1;
+  }
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+}
+
+.hero__bg {
+  width: 100vw;
+  height: 50rem;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(0.7);
+}
+
+.hero__contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 4rem 1rem #232323;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  margin-top: 3rem;
+}
+
+.hero__list {
+  display: flex;
+  color: var(--color-secondary);
+  padding-bottom: 4rem;
+}
+
+.hero__list a:nth-last-child(2),
+.hero__list a:nth-last-child(3) {
+  display: none;
+}
+
+.hero__list .list__items {
+  margin-right: 3rem;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+}
+
+.hero__list .list__items:hover {
+  opacity: 0.5;
+}
+
+.hero__list .list__items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  height: 4px;
+  width: 0%;
+  background: var(--color-secondary);
+}
+
+.hero__list .list__items:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list a:nth-last-child(2),
+  .hero__list a:nth-last-child(3) {
+    display: block;
+  }
+
+  h1 {
+    max-width: 60rem;
   }
 }
