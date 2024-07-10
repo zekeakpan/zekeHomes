@@ -14,57 +14,396 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="hero">
-      <picture>
-        <source
-          type="image/webp"
-          srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x"
-        />
-        <source
-          type="image/jpg"
-          srcset="images/hero-image@1x.jpg 1x, images/hero-image@2x.jpg 2x"
-        />
-        <img class="hero__bg" src="images/hero-image@2x.jpg" alt="" />
-      </picture>
-      <div class="hero__contents">
-        <h1>The #1 site real estate professionals trust</h1>
-        <ul class="hero__list">
-          <a href="">
-            <li class="list__items">Buy</li>
-          </a>
-          <a href="">
-            <li class="list__items">Rent</li>
-          </a>
-          <a href="">
-            <li class="list__items">Sell</li>
-          </a>
-          <a href="">
-            <li class="list__items">Pre-approval</li>
-          </a>
-          <a href="">
-            <li class="list__items">Agents</li>
-          </a>
-          <a href="">
-            <li class="list__items">Just sold</li>
-          </a>
-          <a href="">
-            <li class="list__items">Home value</li>
-          </a>
-        </ul>
-        <div class="address-bar">
-          <input
-            class="input"
-            type="text"
-            id="address"
-            name="address"
-            placeholder="Address, School, City, Zip"
-          />
-          <button class="btn btn--primary">
-            <svg class="icon icon--secondary">
-              <use href="images/sprite.svg#search"></use>
-            </svg>
-          </button>
-        </div>
+    <section class="listing">
+      <header>
+        <h2 class="listing__heading">Browse homes in Tamarac, FL</h2>
+      </header>
+      <div class="listing__container">
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >251</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview@2x.webp 1x,
+                      images/home-frontview@3x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview@2x.jpg 1x,
+                      images/home-frontview@3x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview@3x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior@2x.webp 1x,
+                      images/home-interior@3x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior@2x.jpg 1x,
+                      images/home-interior@3x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior@3x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >6</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_1@1x.webp 1x,
+                      images/home-frontview_1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_1@1x.jpg 1x,
+                      images/home-frontview_1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_1@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_1@1x.webp 1x,
+                      images/home-interior_1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_1@1x.jpg 1x,
+                      images/home-interior_1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_1@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >583</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_3@1x.webp 1x,
+                      images/home-frontview_3@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_3@1x.jpg 1x,
+                      images/home-frontview_3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_3@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_3@1x.webp 1x,
+                      images/home-interior_3@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_3@1x.jpg 1x,
+                      images/home-interior_3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_3@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >4</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_4@1x.webp 1x,
+                      images/home-frontview_4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_4@1x.jpg 1x,
+                      images/home-frontview_4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_4@1x.webp 1x,
+                      images/home-interior_4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_4@1x.jpg 1x,
+                      images/home-interior_4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >3</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_5@1x.webp 1x,
+                      images/home-frontview_5@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_5@1x.jpg 1x,
+                      images/home-frontview_5@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_5@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_5@1x.webp 1x,
+                      images/home-interior_5@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_5@1x.jpg 1x,
+                      images/home-interior_5@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_5@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >436</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_6@1x.webp 1x,
+                      images/home-frontview_6@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_6@1x.jpg 1x,
+                      images/home-frontview_6@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_6@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_6@1x.webp 1x,
+                      images/home-interior_6@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_6@1x.jpg 1x,
+                      images/home-interior_6@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_6@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anker">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >251</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_7@1x.webp 1x,
+                      images/home-frontview_7@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_7@1x.jpg 1x,
+                      images/home-frontview_7@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_7@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_7@1x.webp 1x,
+                      images/home-interior_7@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_7@1x.jpg 1x,
+                      images/home-interior_7@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_7@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
     <script src="js/main.js"></script>

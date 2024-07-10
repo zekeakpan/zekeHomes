@@ -1,4 +1,27 @@
 
+const imageContainer = document.querySelectorAll('.card__image-container');
+
+imageContainer.forEach(container => {
+    const image = container.querySelectorAll('.card__image');
+    
+    container.addEventListener('mouseover', () => {
+        image[0].classList.remove('active');
+        image[0].classList.add('previous');
+        image[1].classList.remove('diminish');
+        image[1].classList.add('active');
+    });
+    
+    container.addEventListener('mouseout', () => {
+        image[1].classList.remove('active');
+        image[1].classList.add('diminish');
+        image[0].classList.remove('previous');
+        image[0].classList.add('active');
+    
+    });
+});
+
+
+
 function initAutocomplete () {
     let input = document.getElementById('address');
     let autocomplete = new google.maps.places.Autocomplete(input);
@@ -58,20 +81,4 @@ document.addEventListener ('DOMContentLoaded', (event) => {
 
 });
 
-const imageContainer = document.querySelector('.card__image-container');
-const image = imageContainer.querySelectorAll('.card__image');
 
-imageContainer.addEventListener('mouseover', () => {
-    image[0].classList.remove('active');
-    image[0].classList.add('previous');
-    image[1].classList.remove('diminish');
-    image[1].classList.add('active');
-});
-
-imageContainer.addEventListener('mouseout', () => {
-    image[1].classList.remove('active');
-    image[1].classList.add('diminish');
-    image[0].classList.remove('previous');
-    image[0].classList.add('active');
-
-});
