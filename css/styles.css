@@ -51,7 +51,7 @@ h4 {
 h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem;
 }
 
 h3 {
@@ -188,6 +188,10 @@ a {
   padding: 1.3rem 1.5rem;
 }
 
+.btn--small {
+  padding: 1.5rem;
+}
+
 .btn--primary:hover {
   opacity: 0.5;
 }
@@ -233,7 +237,7 @@ input:focus {
 .address-bar {
   display: flex;
   background: var(--color-secondary);
-  padding: 0.4rem 0.6rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 3rem;
   width: 100%;
   max-width: 58rem;
@@ -334,6 +338,10 @@ input:focus {
   transition: border 0.3s ease-out;
 }
 
+.discover h2 {
+  margin-top: 3rem;
+}
+
 .discover__card:hover {
   border: 1px solid var(--color-primary);
 }
@@ -378,6 +386,10 @@ input:focus {
   max-width: 30rem;
   border-radius: 2rem;
   box-shadow: 0 0.5rem 1rem #a7a7a7;
+}
+
+.trends__section .listing__container {
+  margin-bottom: 3rem;
 }
 
 .trend__header {
@@ -437,16 +449,17 @@ input:focus {
 
 /* Article Block */
 
-article {
+.article__container {
   position: relative;
   height: 40rem;
+  margin: 3rem 0;
 }
 
 .article__header {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -497,12 +510,24 @@ article {
 }
 
 @media screen and (min-width: 768px) {
+  .article {
+    margin-bottom: 4rem;
+  }
+
+  .article__container {
+    height: 50rem;
+  }
+
   .grid--1x3.article__image-container {
     grid-template-columns: 1fr minmax(auto, 50rem) 1fr;
   }
 
+  .article__heading {
+    font-size: 3rem;
+  }
+
   .article__header {
-    top: 35%;
+    top: 50%;
     max-width: 50rem;
   }
 
@@ -518,7 +543,7 @@ article {
   }
 
   .article__header {
-    top: 35%;
+    top: 50%;
     max-width: 60rem;
   }
 
@@ -590,6 +615,10 @@ article {
     font-size: 1.6rem;
     padding-left: 1rem;
     text-decoration: underline;
+  }
+
+  .local__search {
+    border: 1px solid var(--color-primary);
   }
 
   .features__container:nth-last-child(odd) picture {
@@ -824,13 +853,13 @@ nav button:hover {
 
 .hero {
   display: flex;
+  position: relative;
 }
 
 .hero__bg {
   width: 100vw;
   height: 50rem;
   object-fit: cover;
-  position: relative;
   filter: brightness(0.7);
 }
 
@@ -838,12 +867,11 @@ nav button:hover {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   text-shadow: 0 0 4rem 1rem #232323;
   left: 50%;
-  top: 25%;
+  top: 40%;
   transform: translate(-50%, -50%);
   margin-top: 3rem;
 }
@@ -910,12 +938,6 @@ nav button:hover {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1240px;
-  }
-}
-
 .listing__heading {
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -930,6 +952,23 @@ nav button:hover {
 .card__anchor {
   margin-right: 1.7rem;
   flex: 0 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1240px;
+  }
+
+  .listing__container {
+    overflow-x: visible;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card__anchor {
+    margin-right: 0;
+  }
 }
 
 /* Discover Block */

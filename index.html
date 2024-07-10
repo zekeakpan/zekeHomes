@@ -14,134 +14,998 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container listing__container">
-      <a class="card__anchor" href="#">
-        <div class="card trend">
-          <div class="trend__header">
-            <span class="badge--small badge--blueish trend__badge">Trends</span>
+    <div class="dim-overlay"></div>
+    <nav class="nav">
+      <button class="btn btn--icon menu__btn">
+        <svg class="menu__icon">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+      </button>
+      <div class="nav__logo">
+        <img src="Images/Logo.svg" alt="" /><span>&reg;</span>
+      </div>
+      <button href="" class="btn btn--icon user__btn">
+        <svg class="icon--primary user">
+          <use
+            href="images/sprite.svg#2232321_follow_person_profile_icon"
+          ></use>
+        </svg>
+      </button>
+      <div class="menu menu__side menu__close">
+        <div class="logo-container">
+          <img src="Images/Logo.svg" alt="" />
+          <button class="btn btn--icon close__btn">
+            <img
+              class="icon close"
+              src="images/4115230_cancel_close_delete_icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <ul class="menu__list">
+          <a href="#">
+            <li class="list__items">Buy</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">Sell</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">Rent</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">Mortgage</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">Find Realtors&reg;</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">My Home</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">News & Insights</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+          <a href="#">
+            <li class="list__items">Advertise</li>
+            <img class="chevron" src="images/chevron.svg" alt="" />
+          </a>
+        </ul>
+        <div class="menu__promotion">
+          <p>Find Homes on the go!</p>
+          <img src="Images/picto-android-app-download-badge.svg" alt="" />
+          <img src="images/picto-app-promotion-bg.svg" alt="" />
+        </div>
+      </div>
+      <div class="register">
+        <a href="#" class="log-in">Log In</a>
+        <button class="btn btn--primary sign-up">Sign Up</button>
+      </div>
+    </nav>
+    <section class="hero">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x"
+        />
+        <source
+          type="image/jpg"
+          srcset="images/hero-image@1x.jpg 1x, images/hero-image@2x.jpg 2x"
+        />
+        <img class="hero__bg" src="images/hero-image@2x.jpg" alt="" />
+      </picture>
+      <div class="hero__contents">
+        <h1>The #1 site real estate professionals trust</h1>
+        <ul class="hero__list">
+          <a href="">
+            <li class="list__items">Buy</li>
+          </a>
+          <a href="">
+            <li class="list__items">Rent</li>
+          </a>
+          <a href="">
+            <li class="list__items">Sell</li>
+          </a>
+          <a href="">
+            <li class="list__items">Pre-approval</li>
+          </a>
+          <a href="">
+            <li class="list__items">Agents</li>
+          </a>
+          <a href="">
+            <li class="list__items">Just sold</li>
+          </a>
+          <a href="">
+            <li class="list__items">Home value</li>
+          </a>
+        </ul>
+        <div class="address-bar">
+          <input
+            class="input"
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address, School, City, Zip"
+          />
+          <button class="btn btn--primary btn--small">
+            <svg class="icon icon--secondary">
+              <use href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container listing">
+      <header>
+        <h2 class="listing__heading">Browse homes in Tamarac, FL</h2>
+      </header>
+      <div class="listing__container">
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >251</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview@2x.webp 1x,
+                      images/home-frontview@3x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview@2x.jpg 1x,
+                      images/home-frontview@3x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview@3x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior@2x.webp 1x,
+                      images/home-interior@3x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior@2x.jpg 1x,
+                      images/home-interior@3x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior@3x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >6</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_1@1x.webp 1x,
+                      images/home-frontview_1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_1@1x.jpg 1x,
+                      images/home-frontview_1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_1@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_1@1x.webp 1x,
+                      images/home-interior_1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_1@1x.jpg 1x,
+                      images/home-interior_1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_1@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >583</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_3@1x.webp 1x,
+                      images/home-frontview_3@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_3@1x.jpg 1x,
+                      images/home-frontview_3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_3@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_3@1x.webp 1x,
+                      images/home-interior_3@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_3@1x.jpg 1x,
+                      images/home-interior_3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_3@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >4</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_4@1x.webp 1x,
+                      images/home-frontview_4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_4@1x.jpg 1x,
+                      images/home-frontview_4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_4@1x.webp 1x,
+                      images/home-interior_4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_4@1x.jpg 1x,
+                      images/home-interior_4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >3</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_5@1x.webp 1x,
+                      images/home-frontview_5@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_5@1x.jpg 1x,
+                      images/home-frontview_5@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_5@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_5@1x.webp 1x,
+                      images/home-interior_5@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_5@1x.jpg 1x,
+                      images/home-interior_5@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_5@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >436</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_6@1x.webp 1x,
+                      images/home-frontview_6@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_6@1x.jpg 1x,
+                      images/home-frontview_6@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/home-frontview_6@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_6@1x.webp 1x,
+                      images/home-interior_6@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_6@1x.jpg 1x,
+                      images/home-interior_6@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_6@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >251</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-frontview_7@1x.webp 1x,
+                      images/home-frontview_7@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-frontview_7@1x.jpg 1x,
+                      images/home-frontview_7@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/trend-home-frontview_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_7@1x.webp 1x,
+                      images/home-interior_7@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_7@1x.jpg 1x,
+                      images/home-interior_7@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_7@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card__anchor">
+          <div class="card card--image">
+            <div class="card__image-container">
+              <h3 class="card__image-heading">New Listings</h3>
+              <span
+                class="badge badge--small badge--secondary card__image-badge"
+                >251</span
+              >
+              <div class="image-slider">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/trend-home-frontview_4@1x.webp 1x,
+                      images/trend-home-frontview_4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/trend-home-frontview_4@1x.jpg 1x,
+                      images/trend-home-frontview_4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image active"
+                    src="images/trend-home-frontview_4@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/home-interior_7@1x.webp 1x,
+                      images/home-interior_7@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/home-interior_7@1x.jpg 1x,
+                      images/home-interior_7@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="images/home-interior_7@2x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="container discover">
+      <headear class="discover__header">
+        <h2 class="discover__heading">Discover how we can help</h2>
+        <div class="discover__button-container">
+          <button class="btn btn--primary btn__buy">Buying</button>
+          <button class="btn btn--outline btn__rent">Renting</button>
+          <button class="btn btn--outline btn__sell">Selling</button>
+        </div>
+      </headear>
+      <div class="discover__section buying active">
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-badge-cash-reward"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Find out how much you can afford</h4>
+                <p class="media__content">
+                  We'll help you estimate your budget range
+                </p>
+                <p class="media__call">Try our affordability calculator</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-calculator"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Understand your monthly costs</h4>
+                <p class="media__content">
+                  Get an in-depth look at your monthly and closing costs.
+                </p>
+                <p class="media__call">Try our mortgage calculator</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-money-stack"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Get help wuth your down payment</h4>
+                <p class="media__content">
+                  You may be able to buy a home with just 3.5% down.
+                </p>
+                <p class="media__call">Find down payment help</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="discover__section renting">
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-rent"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Rent with the option to buy</h4>
+                <p class="media__content">
+                  Lease from Home Partners of America with an option to buy.
+                </p>
+                <p class="media__call">Check program availability</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-arrows"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">
+                  Find out if it's better to rent or buy
+                </h4>
+                <p class="media__content">
+                  Determine if buying or renting makes more financial sense.
+                </p>
+                <p class="media__call">Try our rent or buy calculator</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-profile"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Save time with a renter profile</h4>
+                <p class="media__content">
+                  Create a free renter profile to share with any landlord.
+                </p>
+                <p class="media__call">Create a profile</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="discover__section selling">
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-pending"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Buy now, sell later</h4>
+                <p class="media__content">
+                  Get help from our partners to buy your new home before
+                  selling.
+                </p>
+                <p class="media__call">Search options from our partners</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use
+                  href="images/sprite.svg#spot-property-making-an-offer"
+                ></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Track your home value</h4>
+                <p class="media__content">
+                  See your home's RealEstimate&#8480; valuation information over
+                  time.
+                </p>
+                <p class="media__call">Get your RealEstimate&#8480;</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card discover__card">
+          <a href="#" class="discover__media">
+            <div class="discover__container">
+              <svg class="media__icon">
+                <use href="images/sprite.svg#spot-sell"></use>
+              </svg>
+              <div class="media__content-container">
+                <h4 class="media__heading">Get offers for your home</h4>
+                <p class="media__content">
+                  Visit Seller's Marketplace to learn how you can sell without
+                  listing.
+                </p>
+                <p class="media__call">Explore my offers</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="article">
+      <div class="article__container">
+        <div class="article__header">
+          <p>Unique Homes</p>
+          <h2 class="article__heading">
+            Once Upon an Abode: 5 Magical Storybook Cottages Priced Below $500k
+          </h2>
+          <button class="btn btn--outline-dark">Read Article</button>
+        </div>
+        <div class="grid grid--1x3 article__image-container">
+          <div class="article__side-image article__side-image--left">
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  images/trend-home-frontview.webp    1x,
-                  images/trend-home-frontview@2x.webp 2x
+                  images/article-home-leftside.webp    1x,
+                  images/article-home-leftside@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  images/trend-home-frontview.jpg    1x,
-                  images/trend-home-frontview@2x.jpg 2x
+                  images/article-home-leftside.jpg    1x,
+                  images/article-home-leftside@2x.jpg 2x
                 "
               />
-              <img
-                class="trend__image"
-                src="Images/trend-home-frontview@2x.jpg"
-                alt=""
-              />
+              <img src="images/article-home-leftside@2x.jpg" alt="" />
             </picture>
           </div>
-          <div class="trend__footer">
-            <p>The Telltale Sign That the Housing Market's Spring Rush</p>
-          </div>
-        </div>
-      </a>
-      <a class="card__anchor" href="#">
-        <div class="card trend">
-          <div class="trend__header">
-            <span class="badge--small badge--blueish trend__badge"
-              >Unique homes</span
-            >
+          <div class="article__image">
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  images/trend-home-frontview_2@1x.webp 1x,
-                  images/trend-home-frontview_2@2x.webp 2x
+                  images/article-home-central.webp    1x,
+                  images/article-home-central@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  images/trend-home-frontview_2@1x.jpg 1x,
-                  images/trend-home-frontview_2@2x.jpg 2x
+                  images/article-home-central.jpg    1x,
+                  images/article-home-central@2x.jpg 2x
                 "
               />
-              <img
-                class="trend__image"
-                src="Images/trend-home-frontview_2@2x.jpg"
-                alt=""
-              />
+              <img src="images/article-home-central@2x.jpg" alt="" />
             </picture>
           </div>
-          <div class="trend__footer">
-            <p>Older Than America Herself: 5 of the Nation's Most Historic</p>
-          </div>
-        </div>
-      </a>
-      <a class="card__anchor" href="#">
-        <div class="card trend">
-          <div class="trend__header">
-            <span class="badge--small badge--blueish trend__badge">Buy</span>
+          <div class="article__side-image article__side-image--right">
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  images/trend-home-frontview_3@1x.webp 1x,
-                  images/trend-home-frontview_3@2x.webp 2x
+                  images/article-home-right-side.webp    1x,
+                  images/article-home-right-side@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  images/trend-home-frontview_3@1x.jpg 1x,
-                  images/trend-home-frontview_3@2x.jpg 2x
+                  images/article-home-right-side.jpg    1x,
+                  images/article-home-right-side@2x.jpg 2x
                 "
               />
-              <img
-                class="trend__image"
-                src="Images/trend-home-frontview_3@2x.jpg"
-                alt=""
-              />
+              <img src="images/article-home-right-side@2x.jpg" alt="" />
             </picture>
           </div>
-          <div class="trend__footer">
-            <p>The One Thing Homeowners in Hurricane Zones Never See</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container trends__section">
+      <div class="listing__container">
+        <a class="card__anchor" href="#">
+          <div class="card trend">
+            <div class="trend__header">
+              <span class="badge--small badge--blueish trend__badge"
+                >Trends</span
+              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/trend-home-frontview.webp    1x,
+                    images/trend-home-frontview@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/trend-home-frontview.jpg    1x,
+                    images/trend-home-frontview@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trend__image"
+                  src="Images/trend-home-frontview@2x.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="trend__footer">
+              <p>The Telltale Sign That the Housing Market's Spring Rush</p>
+            </div>
+          </div>
+        </a>
+        <a class="card__anchor" href="#">
+          <div class="card trend">
+            <div class="trend__header">
+              <span class="badge--small badge--blueish trend__badge"
+                >Unique homes</span
+              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/trend-home-frontview_2@1x.webp 1x,
+                    images/trend-home-frontview_2@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/trend-home-frontview_2@1x.jpg 1x,
+                    images/trend-home-frontview_2@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trend__image"
+                  src="Images/trend-home-frontview_2@2x.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="trend__footer">
+              <p>Older Than America Herself: 5 of the Nation's Most Historic</p>
+            </div>
+          </div>
+        </a>
+        <a class="card__anchor" href="#">
+          <div class="card trend">
+            <div class="trend__header">
+              <span class="badge--small badge--blueish trend__badge">Buy</span>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/trend-home-frontview_3@1x.webp 1x,
+                    images/trend-home-frontview_3@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/trend-home-frontview_3@1x.jpg 1x,
+                    images/trend-home-frontview_3@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trend__image"
+                  src="Images/trend-home-frontview_3@2x.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="trend__footer">
+              <p>The One Thing Homeowners in Hurricane Zones Never See</p>
+            </div>
+          </div>
+        </a>
+        <a class="card__anchor" href="#">
+          <div class="card trend">
+            <div class="trend__header">
+              <span class="badge--small badge--blueish trend__badge"
+                >Trends</span
+              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/trend-home-frontview_4@1x.webp 1x,
+                    images/trend-home-frontview_4@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/trend-home-frontview_4@1x.jpg 1x,
+                    images/trend-home-frontview_4@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trend__image"
+                  src="Images/trend-home-frontview_4@2x.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="trend__footer">
+              <p>Buying in 'Billionaires Isle' Nantucket Is Now a Bargain:</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="features-block">
+      <div class="features__container grid grid--1x2">
+        <picture class="features__image">
+          <source type="image/webp" srcset="images/need-a-home.webp" />
+          <source type="image/jpg" srcset="images/need-a-home.jpg" />
+          <img src="Images/need-a-home.jpg" alt="" />
+        </picture>
+        <div class="features__content">
+          <h2 class="content__heading">Need a home loan? Get preapproved</h2>
+          <p>
+            Find a lender who can offer competitive mortgage rates and help you
+            with pre-approval.
+          </p>
+          <a class="btn btn--primary btn--features"> Get pre-approved now </a>
+          <a class="features__link" href="#">Advertising disclosure</a>
+        </div>
+      </div>
+      <div class="features__container grid grid--1x2">
+        <picture class="features__image">
+          <source type="image/webp" srcset="images/get-local-info.webp" />
+          <source type="image/jpg" srcset="images/get-local-info.jpg" />
+          <img src="Images/get-local-info.jpg" alt="" />
+        </picture>
+        <div class="features__content">
+          <h2 class="content__heading">Get Local Info</h2>
+          <p>
+            Does it have pet-friendly rentals? How are the schools? Get
+            important local information on the area you're most interested in.
+          </p>
+          <div class="address-bar local__search">
+            <!-- <label for="address">Hey input your dream location</label> -->
+            <input
+              class="input"
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Home Address, City"
+            />
+            <button class="btn btn--primary btn--small">
+              <svg class="icon icon--secondary">
+                <use href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
           </div>
         </div>
-      </a>
-      <a class="card__anchor" href="#">
-        <div class="card trend">
-          <div class="trend__header">
-            <span class="badge--small badge--blueish trend__badge">Trends</span>
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  images/trend-home-frontview_4@1x.webp 1x,
-                  images/trend-home-frontview_4@2x.webp 2x
-                "
-              />
-              <source
-                type="image/jpg"
-                srcset="
-                  images/trend-home-frontview_4@1x.jpg 1x,
-                  images/trend-home-frontview_4@2x.jpg 2x
-                "
-              />
-              <img
-                class="trend__image"
-                src="Images/trend-home-frontview_4@2x.jpg"
-                alt=""
-              />
-            </picture>
-          </div>
-          <div class="trend__footer">
-            <p>Buying in 'Billionaires Isle' Nantucket Is Now a Bargain:</p>
-          </div>
-        </div>
-      </a>
-    </div>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
