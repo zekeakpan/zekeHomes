@@ -51,6 +51,7 @@ h4 {
 h2 {
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -166,8 +167,8 @@ a {
   cursor: pointer;
   outline: none;
   border-radius: 3rem;
-  padding: 1.5rem;
   white-space: nowrap;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   font-size: 1.6rem;
@@ -184,15 +185,22 @@ a {
 .btn--primary {
   background: var(--color-primary);
   color: var(--color-secondary);
+  padding: 1.3rem 1.5rem;
 }
 
 .btn--primary:hover {
-  background: #616161;
+  opacity: 0.5;
 }
 
 .btn--outline {
-  border: 2px solid var(--color-primary);
+  background: none;
+  border: 1px solid #828282;
   color: var(--color-primary);
+  padding: 1.3rem 1.5rem;
+}
+
+.btn--outline:hover {
+  background: #efefef;
 }
 
 .btn--outline-dark {
@@ -246,11 +254,11 @@ input:focus {
 /* Listing Cards */
 
 .card--image {
-  max-width: 30rem;
+  max-width: 29rem;
 }
 
 .card__image-container {
-  width: 30rem;
+  width: 29rem;
   position: relative;
   height: 21rem;
   overflow: hidden;
@@ -319,9 +327,15 @@ input:focus {
 
 /* Discover Cards */
 
-.discover {
+.discover__card {
   border: 1px solid #c6c6c6;
-  padding: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: border 0.3s ease-out;
+}
+
+.discover__card:hover {
+  border: 1px solid var(--color-primary);
 }
 
 .discover__media {
@@ -333,13 +347,12 @@ input:focus {
 
 .discover__container {
   display: flex;
-  flex-direction: row;
 }
 
 .media__icon {
-  width: 6rem;
-  height: 6rem;
-  margin-right: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-right: 3.3rem;
 }
 
 .media__heading {
@@ -351,7 +364,7 @@ input:focus {
 }
 
 .media__content {
-  margin-bottom: 3rem;
+  margin-bottom: 1.3rem;
 }
 
 .media__call {
@@ -885,8 +898,22 @@ nav button:hover {
 
 /* Listing Block */
 
-.listing {
-  margin: 0 6rem;
+.container {
+  padding: 0 2.5rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1240px;
+  }
 }
 
 .listing__heading {
@@ -906,3 +933,46 @@ nav button:hover {
 }
 
 /* Discover Block */
+
+.discover__button-container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.discover__button-container .btn {
+  margin-right: 1rem;
+}
+
+.discover__section {
+  display: none;
+}
+
+.discover__section.active {
+  display: block;
+}
+
+@media screen and (min-width: 990px) {
+  .discover__section.active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .discover__media {
+    height: 20rem;
+  }
+
+  .discover__container {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    gap: 1rem;
+  }
+
+  .media__content::after {
+    content: "Lorem ipsum dolor sit. Voluptatum, ab?";
+  }
+
+  .media__icon {
+    width: 4rem;
+  }
+}

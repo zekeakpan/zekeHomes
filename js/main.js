@@ -1,3 +1,39 @@
+const buyButton = document.querySelector('.btn__buy');
+const rentButton = document.querySelector('.btn__rent');
+const sellButton = document.querySelector('.btn__sell');
+const buyingSection = document.querySelector('.buying');
+const rentingSection = document.querySelector('.renting');
+const sellingSection = document.querySelector('.selling');
+
+function activateSection (section) {
+    buyingSection.classList.remove('active');
+    rentingSection.classList.remove('active');
+    sellingSection.classList.remove('active');
+    section.classList.add('active');
+}
+
+buyButton.addEventListener('click', () => {
+    activateSection(buyingSection);
+});
+
+rentButton.addEventListener('click', () => {
+    activateSection(rentingSection);
+});
+
+sellButton.addEventListener('click', () => {
+    activateSection(sellingSection);
+});
+
+
+
+
+
+
+
+
+
+
+
 
 const imageContainer = document.querySelectorAll('.card__image-container');
 
