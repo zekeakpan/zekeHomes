@@ -776,6 +776,10 @@ nav button:hover {
 }
 
 @media screen and (min-width: 990px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+
   .menu__btn,
   .user__btn,
   .logo-container,
