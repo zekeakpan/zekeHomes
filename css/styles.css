@@ -513,11 +513,17 @@ input:focus {
   color: var(--color-secondary);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .article__image img {
     width: 100%;
   }
 
+  .grid--1x3.article__image-container {
+    gap: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 450px) {
   .grid--1x3.article__image-container {
     gap: 0.7rem;
   }
